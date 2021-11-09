@@ -56,6 +56,11 @@ const StyledLink = styled.a<{
   }
 
   ${({ size, template }) => css`
+    ${size === "s1" && css`
+      font-size: ${({ theme }) => theme.rem(20)};
+      padding: ${({ theme }) => `${theme.rem(22)} ${theme.rem(45)}`};
+    `};
+
     ${size === "s2" &&
     css`
       font-size: ${({ theme }) => theme.rem(18)};
@@ -73,6 +78,12 @@ const StyledLink = styled.a<{
     css`
       color: white;
       border: ${({ theme }) => `${theme.rem(2)} solid ${theme.colors.blue}`};
+    `}
+
+    ${template === "t2" &&
+    css`
+      color: white;
+      background: rgba(0, 0, 0, 0.65);
     `}
 
     ${template === "t3" &&

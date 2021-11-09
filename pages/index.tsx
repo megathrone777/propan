@@ -13,6 +13,7 @@ import {
   THero,
   TWelcome,
   TOffer,
+  Stages,
 } from "~/components";
 
 import ProductsRecommendedQuery from "~/queries/productsRecommended.graphql";
@@ -40,6 +41,7 @@ const IndexPage: NextPage<TProps> = ({
     <Hero {...heroBanner} />
     <Welcome {...welcome} />
     <Offers offers={offers} />
+    <Stages />
     <Products products={products} title="Насосы" />
   </Layout>
 );
