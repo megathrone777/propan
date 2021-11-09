@@ -1,0 +1,6 @@
+query WelcomeQuery {
+  welcome {
+    title
+    text
+  }
+}

@@ -1,0 +1,9 @@
+query OffersQuery {
+  offers {
+    image {
+      url
+    }
+    slug
+    title
+  }
+}

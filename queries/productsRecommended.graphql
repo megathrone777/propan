@@ -1,0 +1,11 @@
+query QueryProductsRecommended {
+  products(where: { recommended: true}) {
+    articul
+    image {
+      url
+    }
+    price
+    slug
+    title
+  }
+}
