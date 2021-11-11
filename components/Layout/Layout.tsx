@@ -17,7 +17,7 @@ const Layout: React.FC<TProps> = ({ children, title }) => (
     </Head>
 
     <Header />
-    <div>{children}</div>
+    <main>{children}</main>
     <footer>Footer</footer>
   </>
 );

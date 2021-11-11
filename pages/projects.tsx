@@ -1,6 +1,17 @@
 import React from "react";
-import { NextPage } from "next";
+import { NextPage, GetServerSideProps } from "next";
+import { gql } from "@apollo/client";
+import client from "../apollo-client";
 
-const ProjectsPage: NextPage = () => <div>Projects page</div>;
+import { Layout, PageHeader, PageContent } from "~/components";
 
-export { ProjectsPage };
+interface TProps {}
+
+const ProjectsPage: NextPage<TProps> = () => (
+  <Layout title="Propan | Проекты">
+    <PageHeader heading="О Компании" />
+    <PageContent>PageContent</PageContent>
+  </Layout>
+);
+
+export default ProjectsPage;
