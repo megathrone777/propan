@@ -1,5 +1,5 @@
 query QueryProductsRecommended {
-  products(where: { recommended: true}) {
+  products(where: { recommended: true }) {
     articul
     image {
       url
