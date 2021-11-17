@@ -8,6 +8,7 @@ export { Welcome } from "./Welcome";
 export { PageContent } from "./Layout/PageContent";
 export { PageHeader } from "./PageHeader";
 export { SideMenu } from "./SideMenu";
+export { Projects } from "./Projects";
 
 export type { TProduct } from "./ProductDetails";
 export type { THero } from "./Hero";
