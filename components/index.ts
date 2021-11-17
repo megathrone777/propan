@@ -1,6 +1,8 @@
+export { Certificates } from "./Certificates";
 export { Layout } from "./Layout";
 export { Hero } from "./Hero";
 export { Offers } from "./Offers";
+export { Partners } from "./Partners";
 export { Products } from "./Products";
 export { ProductDetails } from "./ProductDetails";
 export { Stages } from "./Stages";
