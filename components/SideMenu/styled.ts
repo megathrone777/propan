@@ -19,14 +19,13 @@ export const StylesItem = styled.li`
   line-height: 1.2;
   transition: all 0.2s;
   background: ${({ theme }) => theme.colors.lightGrey};
-  border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
+  border-bottom: ${({ theme }) => `${theme.rem(1)} solid ${theme.colors.grey}`};
   margin-bottom: ${({ theme }) => theme.rem(1)};
   overflow: hidden;
 
-  // img not works
   &::after {
     content: "";
-    background: url("/images/arrow.png") center center/contain no-repeat;
+    background: url("/images/arrow_bg.png") center center/contain no-repeat;
     width: ${({ theme }) => theme.rem(25)};
     height: ${({ theme }) => theme.rem(20)};
     position: absolute;
@@ -38,6 +37,7 @@ export const StylesItem = styled.li`
 
   & a {
     color: ${({ theme }) => theme.colors.text};
+    font: ${({ theme }) => `${theme.rem(15)} ${theme.fonts.font}`};
   }
 
   &:hover {

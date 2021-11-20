@@ -11,22 +11,27 @@ const SideMenu: React.FC<TProps> = () => {
       <StyledList>
         <StylesItem>
           <Link href="/">
+            <a>Магазин</a>
+          </Link>
+        </StylesItem>
+        <StylesItem>
+          <Link href="/">
             <a>О компании</a>
           </Link>
         </StylesItem>
         <StylesItem>
           <Link href="/">
-            <a>Этапы проведения газификациии</a>
+            <a>Этапы проведения газификации</a>
+          </Link>
+        </StylesItem>
+        <StylesItem>
+          <Link href="/">
+            <a>Отопление и газоснабжение</a>
           </Link>
         </StylesItem>
         <StylesItem>
           <Link href="/">
             <a>Газовое оборудование</a>
-          </Link>
-        </StylesItem>
-        <StylesItem>
-          <Link href="/">
-            <a>Оборудование для АГЗС</a>
           </Link>
         </StylesItem>
         <StylesItem>
@@ -37,6 +42,16 @@ const SideMenu: React.FC<TProps> = () => {
         <StylesItem>
           <Link href="/">
             <a>Автоцистерны для перевозки сжиженного газа</a>
+          </Link>
+        </StylesItem>
+        <StylesItem>
+          <Link href="/">
+            <a>Наши проекты</a>
+          </Link>
+        </StylesItem>
+        <StylesItem>
+          <Link href="/">
+            <a>Контакты</a>
           </Link>
         </StylesItem>
       </StyledList>

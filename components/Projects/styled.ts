@@ -18,12 +18,19 @@ export const StyledProjectImg = styled.div`
   display: inline-block;
   min-height: ${({ theme }) => theme.rem(220)};
   position: relative;
-  transition: transform 1s;
   transform-origin: center center;
   width: 100%;
+
+  & img {
+    transition: transform 1s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 `;
 
 export const StyledProjectName = styled.span`
   display: inline-block;
   min-height: ${({ theme }) => theme.rem(40)};
+  font: ${({ theme }) => `${theme.rem(15)} ${theme.fonts.fontMedium}`};
 `;

@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import homeImg from "~/images/home.jpg";
+import homeImg from "~/public/images/hero_img.jpg";
 
 import {
   StyledWrapper,
