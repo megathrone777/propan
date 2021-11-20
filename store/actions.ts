@@ -1,5 +1,5 @@
 export enum TActionTypes {
-  REMOVE_PRODUCT = "REMOVE_PRODUCT",
+  REMOVE_FROM_CART = "REMOVE_FROM_CART",
   ADD_TO_CART = "ADD_TO_CART",
 }
 
@@ -8,12 +8,12 @@ export interface TAction {
   type: TActionTypes;
 }
 
-export const addToCart = (product: any): TAction => ({
+export const addToCart = (product): TAction => ({
   payload: product,
   type: TActionTypes.ADD_TO_CART,
 });
 
 export const removeFromCart = (id: string): TAction => ({
   payload: id,
-  type: TActionTypes.REMOVE_PRODUCT,
+  type: TActionTypes.REMOVE_FROM_CART,
 });

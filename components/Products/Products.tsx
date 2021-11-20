@@ -48,7 +48,7 @@ const Products: React.FC<TProps> = ({ products, title }) => {
                   {image && (
                     <StyledItemImageHolder>
                       <StyledItemImageLink href={`/product/${slug}`}>
-                        <StyledItemImage alt={title} src={image.url} />
+                        <StyledItemImage alt={title} src={image?.url} />
                       </StyledItemImageLink>
                     </StyledItemImageHolder>
                   )}
@@ -81,7 +81,12 @@ const Products: React.FC<TProps> = ({ products, title }) => {
         )}
 
         <StyledButtons>
-          <Button href="/shop" size="s2" template="t1" text="Перейти в магазин" />
+          <Button
+            href="/shop"
+            size="s2"
+            template="t1"
+            text="Перейти в магазин"
+          />
         </StyledButtons>
       </StyledLayout>
     </StyledWrapper>

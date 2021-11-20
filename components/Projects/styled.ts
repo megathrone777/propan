@@ -6,9 +6,9 @@ export const StyledWrapper = styled.section`
 `;
 
 export const StyledProject = styled.div`
-  flex: 0 1 calc(25% - 10px);
-  max-width: calc(25% - 10px);
-  margin: 0 5px 20px;
+  flex: 0 1 calc(25% - ${({ theme }) => theme.rem(10)});
+  max-width: calc(25% - ${({ theme }) => theme.rem(10)});
+  margin: ${({ theme }) => `0 ${theme.rem(5)} ${theme.rem(10)}`};
   overflow: hidden;
   background-color: white;
   text-align: center;
@@ -16,7 +16,7 @@ export const StyledProject = styled.div`
 
 export const StyledProjectImg = styled.div`
   display: inline-block;
-  min-height: 220px;
+  min-height: ${({ theme }) => theme.rem(220)};
   position: relative;
   transition: transform 1s;
   transform-origin: center center;
@@ -25,5 +25,5 @@ export const StyledProjectImg = styled.div`
 
 export const StyledProjectName = styled.span`
   display: inline-block;
-  min-height: 40px;
+  min-height: ${({ theme }) => theme.rem(40)};
 `;

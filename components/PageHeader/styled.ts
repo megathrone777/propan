@@ -5,13 +5,12 @@ export const StyledWrapper = styled.section`
   padding-top: ${({ theme }) => theme.rem(165)};
   color: white;
   justify-content: center;
-  font-size: 1.75rem;
-  font-family: ${({ theme: { fonts } }) => fonts.fontBlack};
+  font: ${({ theme }) => `${theme.rem(28)} ${theme.fonts.fontBlack}`};
   letter-spacing: 3px;
   line-height: 1;
   margin-right: 0;
   margin-left: 0;
-  margin-bottom: 15px;
+  margin-bottom: ${({ theme }) => theme.rem(15)};
   text-transform: uppercase;
   overflow: hidden;
   height: ${({ theme }) => theme.rem(280)};

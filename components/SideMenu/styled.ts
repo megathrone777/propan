@@ -20,7 +20,7 @@ export const StylesItem = styled.li`
   transition: all 0.2s;
   background: ${({ theme }) => theme.colors.lightGrey};
   border-bottom: 1px solid ${({ theme }) => theme.colors.grey};
-  margin-bottom: 1px;
+  margin-bottom: ${({ theme }) => theme.rem(1)};
   overflow: hidden;
 
   // img not works
@@ -33,7 +33,7 @@ export const StylesItem = styled.li`
     top: 50%;
     transform: rotate(180deg) translateY(-50%);
     transform-origin: 50% 1px;
-    right: 10px;
+    right: ${({ theme }) => theme.rem(10)};
   }
 
   & a {

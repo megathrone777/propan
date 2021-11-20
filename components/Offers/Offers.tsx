@@ -34,7 +34,7 @@ const Offers: React.FC<TProps> = ({ offers }) => (
               index: number
             ): React.ReactElement => (
               <StyledItem key={`${slug}-${index}`}>
-                <StyledImage alt={title} src={image.url} />
+                <StyledImage alt={title} src={image?.url} />
                 <StyledTitle dangerouslySetInnerHTML={{ __html: title }} />
 
                 <StyledFooter>
