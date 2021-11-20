@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import { Header } from "~/components/Layout/Header";
+import { Header, Footer } from "~/components";
 
 interface TProps {
   children: React.ReactNode;
@@ -18,7 +18,7 @@ const Layout: React.FC<TProps> = ({ children, title }) => (
 
     <Header />
     <main>{children}</main>
-    <footer>Footer</footer>
+    <Footer />
   </>
 );
 

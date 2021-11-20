@@ -5,6 +5,7 @@ export interface TColors {
   lightGrey: string;
   text: string;
   dark: string;
+  green: string;
 }
 
 const colors: TColors = {
@@ -14,6 +15,7 @@ const colors: TColors = {
   lightGrey: "#f9f9f9",
   text: "#080337",
   dark: "#373c3f",
+  green: "#44d18e",
 };
 
 export { colors };
