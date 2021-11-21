@@ -11,10 +11,10 @@ export const StyledList = styled.ul`
 `;
 
 export const StyledItem = styled.li`
-  max-width: ${({ theme }) => theme.rem(150)};
   text-align: center;
 `;
 
 export const StyledImage = styled.img`
   max-height: ${({ theme }) => theme.rem(70)};
+  max-width: ${({ theme }) => theme.rem(150)};
 `;

@@ -1,4 +1,4 @@
-interface TPartner {
+export interface TPartner {
   image: {
     url: string;
   };

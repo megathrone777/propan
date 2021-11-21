@@ -1,4 +1,4 @@
-interface TCertificate {
+export interface TCertificate {
   image: {
     url: string;
   };

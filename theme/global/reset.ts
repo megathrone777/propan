@@ -108,6 +108,10 @@ const reset = css`
   ul {
     list-style: none;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;
 
 export { reset };

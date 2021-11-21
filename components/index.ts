@@ -7,8 +7,16 @@ export { Products } from "./Products";
 export { ProductDetails } from "./ProductDetails";
 export { Stages } from "./Stages";
 export { Welcome } from "./Welcome";
+export { PageContent } from "./Layout/PageContent";
+export { PageHeader } from "./PageHeader";
+export { SideMenu } from "./SideMenu";
+export { Projects } from "./Projects";
+export { Header } from "./Layout/Header";
+export { Footer } from "./Layout/Footer";
 
 export type { TProduct } from "./ProductDetails";
 export type { THero } from "./Hero";
 export type { TWelcome } from "./Welcome";
 export type { TOffer } from "./Offers";
+export type { TPartner } from "./Partners";
+export type { TCertificate } from "./Certificates";
