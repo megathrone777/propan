@@ -20,12 +20,7 @@ import {
   Certificates,
 } from "~/components";
 
-import ProductsRecommendedQuery from "~/queries/productsRecommended.graphql";
-import HeroQuery from "~/queries/hero.graphql";
-import WelcomeQuery from "~/queries/welcome.graphql";
-import OffersQuery from "~/queries/offers.graphql";
-import PartnersQuery from "~/queries/partners.graphql";
-import CertificatesQuery from "~/queries/certificates.graphql";
+import IndexPageQuery from "~/queries/indexpage.graphql";
 
 interface TProps {
   heroBanner: THero;
@@ -60,50 +55,10 @@ const IndexPage: NextPage<TProps> = ({
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const {
-    data: { products },
+    data: { products, heroBanner, welcome, offers, partners, certificates },
   } = await client.query({
     query: gql`
-      ${ProductsRecommendedQuery}
-    `,
-  });
-
-  const {
-    data: { heroBanner },
-  } = await client.query({
-    query: gql`
-      ${HeroQuery}
-    `,
-  });
-
-  const {
-    data: { welcome },
-  } = await client.query({
-    query: gql`
-      ${WelcomeQuery}
-    `,
-  });
-
-  const {
-    data: { offers },
-  } = await client.query({
-    query: gql`
-      ${OffersQuery}
-    `,
-  });
-
-  const {
-    data: { partners },
-  } = await client.query({
-    query: gql`
-      ${PartnersQuery}
-    `,
-  });
-
-  const {
-    data: { certificates },
-  } = await client.query({
-    query: gql`
-      ${CertificatesQuery}
+      ${IndexPageQuery}
     `,
   });
 

@@ -13,65 +13,63 @@ import {
 
 interface TProps {}
 
-const Projects: React.FC<TProps> = () => {
-  return (
-    <StyledWrapper>
-      <StyledProject>
-        <Link href="/">
-          <a>
-            <StyledProjectImg>
-              <Image src={homeImg} layout="fill" objectFit="cover" />
-            </StyledProjectImg>
-            <StyledProjectName>Газификация дома 360м2</StyledProjectName>
-          </a>
-        </Link>
-      </StyledProject>
+const Projects: React.FC<TProps> = () => (
+  <StyledWrapper>
+    <StyledProject>
+      <Link href="/" passHref>
+        <a>
+          <StyledProjectImg>
+            <Image src={homeImg} layout="fill" objectFit="cover" />
+          </StyledProjectImg>
+          <StyledProjectName>Газификация дома 360м2</StyledProjectName>
+        </a>
+      </Link>
+    </StyledProject>
 
-      <StyledProject>
-        <Link href="/">
-          <a>
-            <StyledProjectImg>
-              <Image src={homeImg} layout="fill" objectFit="cover" />
-            </StyledProjectImg>
-            <StyledProjectName>Газификация дома 360м2</StyledProjectName>
-          </a>
-        </Link>
-      </StyledProject>
+    <StyledProject>
+      <Link href="/" passHref>
+        <a>
+          <StyledProjectImg>
+            <Image src={homeImg} layout="fill" objectFit="cover" />
+          </StyledProjectImg>
+          <StyledProjectName>Газификация дома 360м2</StyledProjectName>
+        </a>
+      </Link>
+    </StyledProject>
 
-      <StyledProject>
-        <Link href="/">
-          <a>
-            <StyledProjectImg>
-              <Image src={homeImg} layout="fill" objectFit="cover" />
-            </StyledProjectImg>
-            <StyledProjectName>Газификация дома 360м2</StyledProjectName>
-          </a>
-        </Link>
-      </StyledProject>
+    <StyledProject>
+      <Link href="/" passHref>
+        <a>
+          <StyledProjectImg>
+            <Image src={homeImg} layout="fill" objectFit="cover" />
+          </StyledProjectImg>
+          <StyledProjectName>Газификация дома 360м2</StyledProjectName>
+        </a>
+      </Link>
+    </StyledProject>
 
-      <StyledProject>
-        <Link href="/">
-          <a>
-            <StyledProjectImg>
-              <Image src={homeImg} layout="fill" objectFit="cover" />
-            </StyledProjectImg>
-            <StyledProjectName>Газификация дома 360м2</StyledProjectName>
-          </a>
-        </Link>
-      </StyledProject>
+    <StyledProject>
+      <Link href="/" passHref>
+        <a>
+          <StyledProjectImg>
+            <Image src={homeImg} layout="fill" objectFit="cover" />
+          </StyledProjectImg>
+          <StyledProjectName>Газификация дома 360м2</StyledProjectName>
+        </a>
+      </Link>
+    </StyledProject>
 
-      <StyledProject>
-        <Link href="/">
-          <a>
-            <StyledProjectImg>
-              <Image src={homeImg} layout="fill" objectFit="cover" />
-            </StyledProjectImg>
-            <StyledProjectName>Газификация дома 360м2</StyledProjectName>
-          </a>
-        </Link>
-      </StyledProject>
-    </StyledWrapper>
-  );
-};
+    <StyledProject>
+      <Link href="/" passHref>
+        <a>
+          <StyledProjectImg>
+            <Image src={homeImg} layout="fill" objectFit="cover" />
+          </StyledProjectImg>
+          <StyledProjectName>Газификация дома 360м2</StyledProjectName>
+        </a>
+      </Link>
+    </StyledProject>
+  </StyledWrapper>
+);
 
 export { Projects };

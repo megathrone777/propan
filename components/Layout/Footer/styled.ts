@@ -19,6 +19,8 @@ export const StyledList = styled.ul`
   font: ${({ theme }) => `${theme.rem(20)} ${theme.fonts.fontSansSemibold}`};
 `;
 
+export const StyledLink = styled.a``;
+
 export const StyledItem = styled.li`
   margin-right: ${({ theme }) => theme.rem(35)};
   transition: all 0.3s;
@@ -27,7 +29,7 @@ export const StyledItem = styled.li`
     transform: scale(1);
   }
 
-  & a {
+  ${StyledLink} {
     letter-spacing: ${({ theme }) => theme.rem(1)};
     color: white;
     white-space: nowrap;
@@ -38,7 +40,7 @@ export const StyledText = styled.p`
   font: ${({ theme }) => `${theme.rem(16)} ${theme.fonts.font}`};
   margin-bottom: ${({ theme }) => theme.rem(20)};
 
-  & a {
+  ${StyledLink} {
     display: inline-block;
     margin-left: ${({ theme }) => theme.rem(4)};
     color: ${({ theme }) => theme.colors.green};

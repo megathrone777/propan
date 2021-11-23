@@ -11,7 +11,7 @@ export { PageContent } from "./Layout/PageContent";
 export { PageHeader } from "./PageHeader";
 export { SideMenu } from "./SideMenu";
 export { Projects } from "./Projects";
-export { Header } from "./Layout/Header";
+export { Header, HeaderLogo } from "./Layout/Header";
 export { Footer } from "./Layout/Footer";
 
 export type { TProduct } from "./ProductDetails";

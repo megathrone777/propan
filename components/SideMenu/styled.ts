@@ -8,6 +8,8 @@ export const StyledWrapper = styled.section`
 
 export const StyledList = styled.ul``;
 
+export const StyledLink = styled.a``;
+
 export const StylesItem = styled.li`
   display: flex;
   align-items: center;
@@ -35,7 +37,7 @@ export const StylesItem = styled.li`
     right: ${({ theme }) => theme.rem(10)};
   }
 
-  & a {
+  ${StyledLink} {
     color: ${({ theme }) => theme.colors.text};
     font: ${({ theme }) => `${theme.rem(15)} ${theme.fonts.font}`};
   }
@@ -43,7 +45,7 @@ export const StylesItem = styled.li`
   &:hover {
     background-color: ${({ theme }) => theme.colors.dark};
 
-    & a {
+    ${StyledLink} {
       color: white;
     }
   }

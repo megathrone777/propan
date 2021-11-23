@@ -111,6 +111,7 @@ const reset = css`
 
   a {
     text-decoration: none;
+    cursor: pointer;
   }
 `;
 

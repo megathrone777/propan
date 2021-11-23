@@ -1,0 +1,59 @@
+query IndexPageQuery {
+  welcome {
+    title
+    text
+  }
+
+  heroBanner {
+    mainImage {
+      url
+    }
+    title
+    secondaryTitle
+    boxTitle1
+    boxTitle2
+    boxImage1 {
+      url
+    }
+    boxImage2 {
+      url
+    }
+  }
+
+  slides(locale: "all") {
+    image {
+      url
+    }
+    title
+  }
+
+  products(where: { recommended: true }) {
+    articul
+    image {
+      url
+    }
+    price
+    slug
+    title
+  }
+
+  offers {
+    image {
+      url
+    }
+    slug
+    title
+  }
+
+  partners {
+    image {
+      url
+    }
+  }
+
+  certificates {
+    image {
+      url
+    }
+  }
+}

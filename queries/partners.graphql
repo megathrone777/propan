@@ -1,7 +1,0 @@
-query PartnersQuery {
-  partners {
-    image {
-      url
-    }
-  }
-}

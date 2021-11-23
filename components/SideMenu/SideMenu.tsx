@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import { StyledWrapper, StyledList, StylesItem } from "./styled";
+import { StyledWrapper, StyledList, StylesItem, StyledLink } from "./styled";
 
 interface TProps {}
 
@@ -10,48 +10,50 @@ const SideMenu: React.FC<TProps> = () => {
     <StyledWrapper>
       <StyledList>
         <StylesItem>
-          <Link href="/">
-            <a>Магазин</a>
+          <Link href="/" passHref>
+            <StyledLink>Магазин</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>О компании</a>
+          <Link href="/" passHref>
+            <StyledLink>О компании</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Этапы проведения газификации</a>
+          <Link href="/" passHref>
+            <StyledLink>Этапы проведения газификации</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Отопление и газоснабжение</a>
+          <Link href="/" passHref>
+            <StyledLink>Отопление и газоснабжение</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Газовое оборудование</a>
+          <Link href="/" passHref>
+            <StyledLink>Газовое оборудование</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Автономное газоснабжение промышленных объектов</a>
+          <Link href="/" passHref>
+            <StyledLink>
+              Автономное газоснабжение промышленных объектов
+            </StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Автоцистерны для перевозки сжиженного газа</a>
+          <Link href="/" passHref>
+            <StyledLink>Автоцистерны для перевозки сжиженного газа</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Наши проекты</a>
+          <Link href="/" passHref>
+            <StyledLink>Наши проекты</StyledLink>
           </Link>
         </StylesItem>
         <StylesItem>
-          <Link href="/">
-            <a>Контакты</a>
+          <Link href="/" passHref>
+            <StyledLink>Контакты</StyledLink>
           </Link>
         </StylesItem>
       </StyledList>
