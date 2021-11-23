@@ -20,13 +20,6 @@ query IndexPageQuery {
     }
   }
 
-  slides(locale: "all") {
-    image {
-      url
-    }
-    title
-  }
-
   products(where: { recommended: true }) {
     articul
     image {

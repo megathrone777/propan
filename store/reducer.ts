@@ -13,7 +13,7 @@ const setStateToLocalStorage = (currentState: TState): TState => {
 
 const reducer: React.Reducer<TState, TAction> = (state, { payload, type }) => {
   const actions = {
-    [TActionTypes.REMOVE_PRODUCT]: (): TState => {
+    [TActionTypes.REMOVE_FROM_CART]: (): TState => {
       return setStateToLocalStorage({
         ...state,
       });
